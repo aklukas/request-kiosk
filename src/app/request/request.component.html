@@ -1,0 +1,12 @@
+<md-toolbar id="toolbar">
+  <span id="first-title" class="titles">Special Request</span>
+  <span class="space-between"></span>
+  <span class="titles">Evening Light Tabernacle</span>
+</md-toolbar>
+
+<app-request-detail
+                    (submitted)="createRequest($event)"
+></app-request-detail>
+<app-request-list [requests]="requests"
+                  (deleted)="deleteRequest($event)"
+></app-request-list>

@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="card">
+    <md-card>
+      <md-card-header>
+        <md-card-title><h1>Request</h1></md-card-title>
+        <md-card-subtitle><h3>Type:</h3></md-card-subtitle>
+      </md-card-header>
+      <form (submit)="submitted.emit(request)">
+        <md-card-content>
+          <md-radio-group [(ngModel)]="request.type" name="type">
+            <md-radio-button [value]="type" *ngFor="let type of types">{{type}} &nbsp; </md-radio-button>
+          </md-radio-group>
+          <table class="full-width"><tr>
+            <td>
+              <md-form-field class="full-width">
+                <input mdInput placeholder="Name"  required type="text" [(ngModel)]="request.name" name="name" >
+              </md-form-field>
+            </td>
+            <td>
+              <md-form-field>
+                <input mdInput [mdDatepicker]="picker" required placeholder="Choose a date" [(ngModel)]="request.date" name="date">
+                <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+                <md-datepicker #picker></md-datepicker>
+              </md-form-field>
+            </td>
+          </tr></table>
+          <p>
+            <md-form-field class="full-width">
+              <input mdInput placeholder="Message" required [(ngModel)]="request.message" name="message">
+            </md-form-field>
+          </p>
+        </md-card-content>
+        <md-card-actions>
+          <button type="submit" md-button color="warn">Submit</button>
+        </md-card-actions>
+      </form>
+    </md-card>
+  </div>
+</div>

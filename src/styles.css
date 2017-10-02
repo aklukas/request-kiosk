@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://fonts.googleapis.com/css?family=Oswald";
+
+html {
+  height: 100%
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+  background-color: rgba(238, 238, 238, 0.60);
+  background-image: url('assets/img/background.jpg') ;
+  background-blend-mode: color;
+  background-size: cover;
+}
+
+md-toolbar {
+  box-shadow: 0 5px 5px -3px black;
+  z-index: 1;
+}
+
+md-toolbar-row {
+  flex-wrap: wrap;
+}

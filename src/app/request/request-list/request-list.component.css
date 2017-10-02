@@ -1,0 +1,11 @@
+/* Requests container */
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.request-card {
+  margin: 10px;
+}

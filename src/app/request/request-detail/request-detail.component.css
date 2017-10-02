@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {}
+
+
+
+md-card {
+  align-self: center;
+  margin: 20px;
+  width: 600px;
+}
+
+form {
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+
